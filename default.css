@@ -1,0 +1,433 @@
+/*Edit Moderator Names*/
+
+ /*SilenceBow*/
+.author[href*="user/SilenceBow"]:after {
+    content: "  [Moderator]" url(%%SilenceBow-Flame%%);
+    color: black;
+    font-weight: bold;
+    }
+.author[href*="user/SilenceBow"]:before {
+    content: url(%%SilenceBow-Flame%%);
+    }
+
+ /*AutoModerator*/
+.author[href*="user/AutoModerator"]:after {
+    content: " [Bot]" url(%%AutoModerator-Battery%%);
+    color: gray;
+    }
+.author[href*="user/AutoModerator"]:before {
+    content: url(%%AutoModerator-Battery%%);
+    }
+ /*trashyredditry*/
+.author[href*="user/trashyredditry"]:after {
+    content: "  1 weird old tip of pasta" url(%%trashyredditry-Biohazard-Black%%);
+    color: #5C00B8;
+    font-size: smaller;
+    }
+.author[href*="user/trashyredditry"]:before {
+    content: url(%%trashyredditry-Biohazard-Red%%);
+    }
+ /*june_oyster*/
+.author[href*="user/june_oyster"]:after {
+    content: "  You've found yourself a friend" url(%%june-oyster-Coffee%%);
+    color: #FF0000;
+    }
+.author[href*="user/june_oyster"]:before {
+    content: url(%%june-oyster-Coffee%%);
+    }
+
+/*No downvotes until subscribed*/
+body:not(.subscriber) .down
+{
+    visibility: hidden !important;
+}
+body:not(.subscriber) #siteTable:before
+{
+     content: "You are not subscribed to /r/subreddit. Please subscribe if you wish to downvote.";
+    display: block;
+    max-width: 800px;
+    background-color: #F6E69F;
+    padding: 5px 10px;
+    margin: 5px 305px 5px 0px;
+    border: 1px solid orange;
+    font-size: small;
+}
+
+/*Report button hover message*/
+.report-button:hover:after {
+position: absolute;
+white-space: normal;
+display: block;
+z-index: 1000;
+width: 350px;
+padding: 5px;
+border: 0px solid #333;
+background: #fca;
+content: "Please also message the moderators a link and reason why you are reporting this, thanks.";
+text-align: center;
+font-size: 10px;
+color: red;
+margin-left: 25px;
+margin-top: 5px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-border-radius: 4px
+}
+
+/*Downvote button hover message*/
+.arrow.down:hover:before {
+position: absolute;
+display: block;
+z-index: 1000;
+width: 210px;
+padding: 5px;
+border: 0px solid #333;
+background: #fca;
+content: "Don't downvote simply because you don't agree.";
+text-align: center;
+font-size: 10px;
+color: red;
+margin-left: 25px;
+margin-top: 5px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-border-radius: 4px
+}
+
+/*Announcement Message*/
+.side .md h4:nth-of-type(1) {
+list-style-type:none!important;
+position: absolute;
+font-size: 14px;
+display: block;
+top: 81px; /*Change this in relation to your header's height*/
+left: 5px; /*adjust this is well*/
+margin: 0;
+background-color: #DEDEDE!important; /*Change for different background color*/
+color: black; /*Change for different for color*/
+text-align: left;
+border-radius: 2px;
+border: 1px solid black;
+width: auto;
+padding: 7px 10px 7px 10px;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.side .md h1:nth-of-type(1) a {
+color: rgb(51, 102, 153); /*Changes the colors of the links*/
+}
+
+.content {
+margin-top:45px; /*Increase or decrease depending on how much room you need*/
+}
+
+/*Sidebar click expandos*/
+.side h6 { /* list button */
+  position: relative;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  background: #F5F5F5;
+  border: 1px solid #DDD;
+  font-size: 12px;
+  color: #111;
+  cursor: pointer;
+}
+
+/*Changes the name of your subscribers/users here now*/
+.titlebox .word { display: none }
+.titlebox .number:after { content: " Subscribed redditors"; }
+.titlebox .users-online span.number:after { content: "  here now"; }
+
+/*Subreddit name below search bar*/
+.titlebox h1 a {
+color: green;
+display: none;
+}
+
+/*Greentext*/
+.md blockquote {
+    border: 0;
+    margin: 0;
+    color: #789922;
+    display: block;
+    line-height: 0.8
+    }
+
+.md blockquote p:before {
+    content: ">";
+    float: left;
+    display: block;
+    }
+
+/*Colorful Link Flairs*/
+ /*This adds a colorful little tag to posts*/
+ /*Flairs*/
+  .linkflairlabel { max-width: none; }
+  .linkflair-Subreddit .linkflairlabel {
+      background-color: #0099FF;
+      font-size: 11px;
+      font-weight: bold;
+      color:#FFFFFF;
+      border-radius: 2px;}
+  .linkflair-ModPost .linkflairlabel {
+      background-color: #9900CC;
+      font-size: 11px;
+      font-weight: bold;
+      color:#FFFFFF;
+      border-radius: 2px;}
+  .linkflair-Discussion .linkflairlabel {
+      background-color: #9900CC;
+      font-size: 11px;
+      font-weight: bold;
+      color:#FFFFFF;
+      border-radius: 2px;}
+
+/*Sidebar link flair filters*/
+html:lang(su) .link:not(.linkflair-Subreddit) {
+    display: none    }
+html:lang(mo) .link:not(.linkflair-ModPost) {
+    display: none    }
+html:lang(di) .link:not(.linkflair-Discussion) {
+    display: none    }
+
+/* PRETTY SUBMIT LINK (1 bar) by /u/RainbowCrash (modified by Sabvegas)*/
+/* Remove submit text button */
+.submit-text { display:none; }
+/*end remove submit text button*/
+.morelink
+{
+    font-weight:bold;
+    letter-spacing:2px;
+    background: #0099FF;
+    border: 2px #0099FF;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    -o-border-radius:2px;
+    -ms-border-radius:2px;
+    -khtml-border-radius:2px;
+    border-radius:2px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color: white;
+}
+.morelink:hover
+{
+    background: white;
+    background-color: white;
+    border-color: #0099FF;
+    border: 10px;
+    color: #0099FF;
+}
+
+.morelink .nub
+{
+    display: none;
+}
+
+.morelink
+{
+    color:#FFF;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size:19px;
+    width: 301px;
+}
+
+.morelink a, .morelink a:hover
+{
+    color: white;
+    border: 2px black
+}
+
+.sidebox.submit-link .morelink::before
+{
+    display: block;
+    clear: none;
+    content: "Submit a New Post";
+    font-size: 95%;
+   overflow: hidden;
+}
+
+.sidebox.submit .morelink a
+{
+    position: absolute;
+    top: 0;
+    padding-left: 1000px;
+    font-size: 0px;
+    text-align: right;
+    color: #56a6f7;
+}
+
+.sidebox.submit.submit-link {
+    width: 150px;
+}
+.sidebox.create
+{
+    display: none;
+}
+
+.sidebox.submit.disabled
+{
+    display: none;
+}
+/* END PRETTY SUBMIT LINKS */
+
+/*Subscribe/Unsubscribe*/
+.fancy-toggle-button .add {
+        background: none;
+        background-color: #0099FF;
+    }
+.fancy-toggle-button .remove {
+        background: none;
+        background-color: #005C99;
+    }
+
+/*Shortcut + Dashboard*/
+.subButtons .RESshortcutside, .subButtons .RESDashboardToggle {
+letter-spacing: 1px;
+text-transform: uppercase;
+border-radius: 3px;
+border: 0;
+font-weight: normal;
+color: #000000;
+background: none!important;
+padding: 1px 0px 1px 0px;
+z-index: 100;
+}
+element.style {
+}
+#header-bottom-right .userkarma, .side .linkinfo, .side .linkinfo .number, .side .linkinfo .word, .side .linkinfo .shortlink, .side .subscribe-button.fancy-toggle-button.toggle a, .side .subButtons span, .side .subscribers, .side .users-online, .side .leavemoderator, .side .titlebox .toggle, .tagline, body .side .title, .side .sidecontentbox, .account-activity-box, .tagline, .flat-list, .bottommenu, .submit-page .roundfield #suggested-reddits, .login-form-side {
+font-size: 10px!important;
+border-bottom: 0px!important;
+}
+.subButtons .RESshortcutside, .subButtons .RESDashboardToggle {
+letter-spacing: 1px;
+text-transform: capitalize;
+border-radius: 3px;
+border: 0;
+font-weight: normal;
+color: #000000;
+background: none!important;
+padding: 1px 0px 1px 0px;
+z-index: 100;
+}
+
+/*Header bar*/
+#header #userbarToggle {
+background: white;
+border-top: 1px solid gray;
+border-bottom: 1px solid white;
+border-right: 0px;
+color: #005C99;
+top: -1px;
+border-radius: 0px;
+border-bottom-left-radius: 2px;
+width: 17px;
+}
+
+#header-bottom-right {
+background-color: #0099FF;
+color: #FFF;
+letter-spacing: 1px;
+border-bottom: 1px solid white;
+}
+
+#header-bottom-right a,#header-bottom-right .separator,#header-bottom-right .user {
+color:#fff;
+}
+
+/*Color banner*/
+#header-bottom-left {
+background: #B2CCFF;
+}
+
+/*Tab menu*/
+.tabmenu li.selected a {
+color: #0099FF;
+background-color: white;
+border: 2px solid #0099FF;
+border-bottom: 1px solid white;
+z-index: 100;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+.tabmenu li a {
+padding: 2px 6px 0 6px;
+background-color: #eff7ff;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+background: #0099FF;
+color: white;
+}
+.tabmenu.formtab .selected a {
+font-size: 130%;
+background-color: white;
+border: 2px solid #0099FF;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+color: #0099FF;
+}
+
+/*Search bar + Expando*/
+#search input[type=text] {
+border: 1px solid #0099FF;
+font-size: 18px;
+width: 295px;
+padding: 2px;
+text-align: center;
+border-radius: 2px;
+}
+#searchexpando {
+display: none;
+margin: 5px 0 0 0;
+border-radius: 2px;
+background-color: #ACDEEE;
+border-color: #0099FF;
+}
+#moresearchinfo {
+display: none;
+padding-top: 5px;
+max-width: 300px;
+border: 0 solid #0099FF;
+margin-top: -5px;
+}
+
+/*Banner*/
+#header {background:Gray url(%%Banner%%)repeat scroll center left;border:none;height:75px}
+/*Change the height above to the height of your banner*/
+#sr-header-area {
+    background-color: #fff;
+    opacity: 1;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 90%;
+    height: 18px;
+    line-height: 18px;
+    z-index: 999;
+}
+#sr-header-area a.choice {
+    opacity: 1.0;
+    z-index: 999;
+}
+#sr-header-area a.choice:hover {
+    text-decoration: underline;
+}
+.tabmenu {
+    position:absolute;
+    bottom:0px;
+}
+#header-bottom-left {
+    background: #0099FF;
+    position: absolute;
+    top: 30px;
+}
+#header {
+    background-color: #c6daed;
+    border: 0px  #000000 solid ;
+}
+#header-img {
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left:10px;
+}
