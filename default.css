@@ -2119,11 +2119,11 @@ div.leavemoderator {
 
 .side .md h2 + ul li { margin-bottom: 10px; font-size: 95%; }
 
-.side .usertext {margin-top: 20px; font-size: 14px !important;}
+.side .usertext {margin-top: 20px; font-size: 13px !important;}
 
-.usertext-body {font-size: 14px;}
+.may-blank-within {font-size: 13px !important;}
 
-.md-container {font-size: 12px;}
+.md-container {font-size: 13px !important;}
 
 /*SIDEBAR BUTTONS COLORS*/
 
