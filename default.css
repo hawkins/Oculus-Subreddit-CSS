@@ -2295,7 +2295,6 @@ body.res .RESshortcutside:active,
     color: #FFF;
     font-weight: bold;
     padding: 2px 10px;
-    border-radius: 20px;
 }
 
 /*COLORFUL LINK FLAIRS*/
@@ -2314,7 +2313,6 @@ body.res .RESshortcutside:active,
 .linkflair-grey .linkflairlabel{
 	color: white;
 	font-weight: Bold;
-	border-radius: 20px;
     padding: 2px 10px;
     transition: 300ms;
     margin-bottom: -2px;
