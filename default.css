@@ -2313,6 +2313,7 @@ body.res .RESshortcutside:active,
 	border-radius: 20px;
     padding: 2px 10px;
     transition: 300ms;
+    margin-bottom: -2px;
 }
 
 /*DEFAULT BACKGROUND*/
