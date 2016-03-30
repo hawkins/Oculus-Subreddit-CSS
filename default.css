@@ -1938,6 +1938,7 @@ body:not(.search-page) #search input[type=text] {
 	padding: 3px;
 	text-transform: uppercase;
 	transition:200ms;
+	border-radius: 20px;
  }
 
 	.morelink a, .morelink a:hover, .morelink a:visited {color: #fff;}
