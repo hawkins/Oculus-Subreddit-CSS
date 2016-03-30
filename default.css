@@ -2554,7 +2554,12 @@ form#image-upload.image-upload {
 }
 
 /*FOOTER*/
-.debuginfo, .footer-parent {background-color: #222;}
+.debuginfo, .footer-parent {background-color: #1B1D1F;;}
+
+.debuginfo {
+	background-color: #16181A !important;
+    	margin-top: -20px;
+}
 
 .footer-parent {
 	font-size: 14px;
@@ -2595,6 +2600,8 @@ form#image-upload.image-upload {
 	border: medium none !important;
 	text-transform: uppercase;
 	font-weight: bold;
+	background-color: #16181A;
+    	padding-top: 10px;
  }
 
 	.bottommenu a {
