@@ -95,10 +95,9 @@ a {
 
 #header-img {
     position: relative;
-    height: 70px!important;
-    width: 70px;
-    margin-top: -3px;
-    margin-left: 0px;
+    height: 60px!important;
+    width: 60px;
+    margin-left: 10px;
     background-size: contain!important;
     background-repeat: no-repeat!important;
     z-index: 1;
