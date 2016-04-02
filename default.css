@@ -454,7 +454,7 @@ body {font-family: -apple-system, San Francisco Display, Helvetica Neue, Helveti
 
 /*ICONOGRAPHY*/
 
-#mail.nohavemail,#mail.havemail, #modmail.havemail,#modmail.nohavemail, .thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self, #header-bottom-right a.pref-lang, .res #header-bottom-right .gearIcon, .arrow.upmod, .arrow.downmod, .arrow.up, .arrow.down,.expando-button {background: url(%%spritesheet%%) !important; background-size: 50px 502px !important;}
+#mail.nohavemail,#mail.havemail, #modmail.havemail,#modmail.nohavemail, .thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self, #header-bottom-right a.pref-lang, .res #header-bottom-right .gearIcon, .arrow.upmod, .arrow.downmod, .arrow.up, .arrow.down,.expando-button {background: url(%%sprites-alt2%%) !important; background-size: 50px 502px !important;}
 
 #mail.nohavemail {background-position: 0 0}
 #mail.havemail {background-position: 0 -58.66px !important;}
@@ -2240,12 +2240,12 @@ body.res .RESshortcutside:active,
 
 /*FLAIRS*/
 
-.flair-blackflair[title],
-.flair-redflair[title],
-.flair-purpleflair[title],
-.flair-greenflair[title],
-.flair-orangeflair[title],
-.flair-blueflair[title] {
+.flair-OculusHomeFlair[title],
+.flair-DeveloperFlair[title],
+.flair-OculusEmployeeFlair[title],
+.flair-JournalistFlair[title],
+.flair-YoutuberFlair[title],
+.flair-StreamerFlair[title] {
     color: white;
     font-size: 10px;
     padding: 0px 10px 0px 0px;
@@ -2256,12 +2256,12 @@ body.res .RESshortcutside:active,
     border-radius: 20px;
 }
 
-.flair-blackflair[title]:before,
-.flair-redflair[title]:before,
-.flair-purpleflair[title]:before,
-.flair-greenflair[title]:before,
-.flair-orangeflair[title]:before,
-.flair-blueflair[title]:before {
+.flair-OculusHomeFlair[title]:before,
+.flair-DeveloperFlair[title]:before,
+.flair-OculusEmployeeFlair[title]:before,
+.flair-JournalistFlair[title]:before,
+.flair-YoutuberFlair[title]:before,
+.flair-StreamerFlair[title]:before {
 	font-weight: Bold;
 	display: inline-block;
 	font-size: 10px;
@@ -2270,26 +2270,33 @@ body.res .RESshortcutside:active,
 	margin-right: 8px;
 }
 
-.flair-blackflair[title] {background: #ffffff; color: #000000;}
-.flair-redflair[title] {background: #9d2d49;}
-.flair-purpleflair[title] {background: #492d9d;}
-.flair-greenflair[title] {background: #005900;}
-.flair-orangeflair[title] {background: #9d492d;}
-.flair-blueflair[title] {background: #3A5795;}
+.flair-OculusHomeFlair[title] {background: #ffffff; color: #000000;}
+.flair-DeveloperFlair[title] {background: #404C54; color: #ffffff;}
+.flair-OculusEmployeeFlair[title] {background: #1574D4;}
+.flair-JournalistFlair[title] {background: #FFF96B; color: #000000;}
+.flair-YoutuberFlair[title] {background: #CD201F; color: #ffffff;}
+.flair-StreamerFlair[title] {background: #6541A5; color: #ffffff;}
 
-.flair-blackflair[title]:before {background: #000000; color: #ffffff;}
-.flair-redflair[title]:before {background: #E14169;}
-.flair-purpleflair[title]:before {background: #6941E1;}
-.flair-greenflair[title]:before {background: green;}
-.flair-orangeflair[title]:before {background: #E16941;}
-.flair-blueflair[title]:before {background: #1574D4;}
+.flair-OculusHomeFlair[title]:before {background: #000000; color: #ffffff;}
+.flair-DeveloperFlair[title]:before {background: #48555E; color: #ffffff;}
+.flair-OculusEmployeeFlair[title]:before {background: #105BA6;}
+.flair-JournalistFlair[title]:before {background: #FFF61F; color: #000000;}
+.flair-YoutuberFlair[title]:before {background: #A11918; color: #ffffff;}
+.flair-StreamerFlair[title]:before {background: #4F3380; color: #ffffff;}
 
-.flair-blackflair[title]:hover {background: #777879; color: #ffffff;}
-.flair-redflair[title]:hover {background: #E14169;}
-.flair-purpleflair[title]:hover {background:#6941E1;}
-.flair-greenflair[title]:hover {background:green;}
-.flair-orangeflair[title]:hover {background: #E16941;}
-.flair-blueflair[title]:hover {background: #148AFF;}
+.flair-OculusHomeFlair[title]:hover {background: #777879; color: #ffffff;}
+.flair-DeveloperFlair[title]:hover {background: #5E6F7B; color: #ffffff;}
+.flair-OculusEmployeeFlair[title]:hover {background:#318EEB;}
+.flair-JournalistFlair[title]:hover {background: #FFFB9E; color: #000000;}
+.flair-YoutuberFlair[title]:hover {background: #E23E3D; color: #ffffff;}
+.flair-StreamerFlair[title]:hover {background: #7F5BBE; color: #ffffff;}
+
+.flair-OculusHomeFlair[title]:before {content: 'Oculus ID:';}
+.flair-DeveloperFlair[title]:before {content: 'Developer';}
+.flair-OculusEmployeeFlair[title]:before {content: 'Oculus';}
+.flair-JournalistFlair[title]:before {content: 'Journalist';}
+.flair-YoutuberFlair[title]:before {content: 'YouTuber';}
+.flair-StreamerFlair[title]:before {content: 'Streamer';}
 
 
 
@@ -2863,11 +2870,11 @@ color.
 
 /*DARK MODE*/
 
-html[lang="dm"] .linkinfo .shortlink input {background: #444;}
+.res-nightmode .linkinfo .shortlink input {background: #444;}
 
-html[lang="dm"] #siteTable .thing .md blockquote,
-html[lang="dm"]  .wiki-page-content .md blockquote,
-html[lang="dm"] .commentarea .md blockquote {
+.res-nightmode #siteTable .thing .md blockquote,
+.res-nightmode  .wiki-page-content .md blockquote,
+.res-nightmode .commentarea .md blockquote {
     padding: 10px;
     border-left: 2px solid #888;
     background-color: #2f2f2f;
@@ -2876,39 +2883,39 @@ html[lang="dm"] .commentarea .md blockquote {
     font-size: 14px;
 }
 
-html[lang="dm"] #siteTable .thing .md table thead tr th, html[lang="dm"]  .wiki-page-content .md table thead tr th {background: #333;}
+.res-nightmode #siteTable .thing .md table thead tr th, .res-nightmode  .wiki-page-content .md table thead tr th {background: #333;}
 
-html[lang="dm"] #siteTable .thing .md table tbody tr,
-html[lang="dm"] .commentarea .thing .md table tbody tr,
-html[lang="dm"] .wiki-page-content .md table tbody tr {
+.res-nightmode #siteTable .thing .md table tbody tr,
+.res-nightmode .commentarea .thing .md table tbody tr,
+.res-nightmode .wiki-page-content .md table tbody tr {
     border-bottom: 1px solid #999;
 }
 
-html[lang="dm"] .md hr {color: #888;}
+.res-nightmode .md hr {color: #888;}
 
-html[lang="dm"] #siteTable .thing .md ul li:nth-child(odd),
-html[lang="dm"] .commentarea .md ul li:nth-child(odd),
-html[lang="dm"] #siteTable .thing .md ol li:nth-child(odd),
-html[lang="dm"] .commentarea .thing .md ol li:nth-child(odd),
-html[lang="dm"] .wiki-page-content .md ol li:nth-child(odd) {
+.res-nightmode #siteTable .thing .md ul li:nth-child(odd),
+.res-nightmode .commentarea .md ul li:nth-child(odd),
+.res-nightmode #siteTable .thing .md ol li:nth-child(odd),
+.res-nightmode .commentarea .thing .md ol li:nth-child(odd),
+.res-nightmode .wiki-page-content .md ol li:nth-child(odd) {
   background-color: #333;
 }
 
-html[lang="dm"] #siteTable .thing .md ul li,
-html[lang="dm"] .commentarea .md ul li,
-html[lang="dm"] #siteTable .thing .md ol li,
-html[lang="dm"] .commentarea .thing .md ol li,
-html[lang="dm"] .wiki-page-content .md ol li {
+.res-nightmode #siteTable .thing .md ul li,
+.res-nightmode .commentarea .md ul li,
+.res-nightmode #siteTable .thing .md ol li,
+.res-nightmode .commentarea .thing .md ol li,
+.res-nightmode .wiki-page-content .md ol li {
   border-bottom: solid 1px #555;
   background-color: #222;
   padding: 5px;
 }
 
-html[lang="dm"] #siteTable .thing .md ul,
-html[lang="dm"] .commentarea .md ul,
-html[lang="dm"] #siteTable .thing .md ol,
-html[lang="dm"] .commentarea .thing .md ol,
-html[lang="dm"] .wiki-page-content .md ol {
+.res-nightmode #siteTable .thing .md ul,
+.res-nightmode .commentarea .md ul,
+.res-nightmode #siteTable .thing .md ol,
+.res-nightmode .commentarea .thing .md ol,
+.res-nightmode .wiki-page-content .md ol {
   border-right: solid 1px #555;
   border-left: solid 1px #555;
   border-top: solid 1px #555;
@@ -2917,212 +2924,212 @@ html[lang="dm"] .wiki-page-content .md ol {
 }
 
 
-html[lang="dm"] .content .entry .buttons li.reported-stamp, html[lang="dm"] body .content .stickied .entry .buttons li.reported-stamp  {
+.res-nightmode .content .entry .buttons li.reported-stamp, .res-nightmode body .content .stickied .entry .buttons li.reported-stamp  {
 
     background: #222 !important;
 	color: #d1d1d1 !important;
 
 }
-html[lang="dm"] .pretty-button.positive {color: #7DDC1F !important;}
+.res-nightmode .pretty-button.positive {color: #7DDC1F !important;}
 
-html[lang="dm"] .pretty-button.neutral {color: #ccc;}
+.res-nightmode .pretty-button.neutral {color: #ccc;}
 
-html[lang="dm"] .pretty-button.negative {color:#FE728B !important;}
+.res-nightmode .pretty-button.negative {color:#FE728B !important;}
 
-html[lang="dm"] .nsfw-stamp {background: #FE728B;}
+.res-nightmode .nsfw-stamp {background: #FE728B;}
 
-html[lang="dm"] .combined-search-page .search-result-group .search-header-label,html[lang="dm"] .combined-search-page .search-result .search-result-body,html[lang="dm"] .combined-search-page .search-result .search-result-header .search-title,html[lang="dm"] .combined-search-page .search-result .search-result-footer .search-link,html[lang="dm"] .combined-search-page .search-result .search-result-meta,html[lang="dm"] .combined-search-page .search-result .search-score,html[lang="dm"] .combined-search-page .search-result .search-comments,html[lang="dm"] .combined-search-page .search-result-group .search-result-group-header {color: #fff}
+.res-nightmode .combined-search-page .search-result-group .search-header-label,.res-nightmode .combined-search-page .search-result .search-result-body,.res-nightmode .combined-search-page .search-result .search-result-header .search-title,.res-nightmode .combined-search-page .search-result .search-result-footer .search-link,.res-nightmode .combined-search-page .search-result .search-result-meta,.res-nightmode .combined-search-page .search-result .search-score,.res-nightmode .combined-search-page .search-result .search-comments,.res-nightmode .combined-search-page .search-result-group .search-result-group-header {color: #fff}
 
-html[lang="dm"] .combined-search-page .search-result .search-expando.collapsed::before {background: transparent linear-gradient(to bottom,rgba(255,255,255,0) 0%,#444 100%) repeat scroll 0 0}
+.res-nightmode .combined-search-page .search-result .search-expando.collapsed::before {background: transparent linear-gradient(to bottom,rgba(255,255,255,0) 0%,#444 100%) repeat scroll 0 0}
 
-html[lang="dm"] .combined-search-page .search-result .search-expando-button {color: #A4D11B}
+.res-nightmode .combined-search-page .search-result .search-expando-button {color: #A4D11B}
 
-html[lang="dm"] .combined-search-page .search-result {border-bottom: 1px solid #666;}
+.res-nightmode .combined-search-page .search-result {border-bottom: 1px solid #666;}
 
-html[lang="dm"] .combined-search-page .search-result-group .search-result-group-header {
+.res-nightmode .combined-search-page .search-result-group .search-result-group-header {
 	background: #222;
 	border-bottom: 1px solid #666;
 	border-top: 1px solid #666;
 }
 
-html[lang="dm"] .stickied a.title:link,html[lang="dm"] body:not(.comments-page) .stickied a.title:visited,html[lang="dm"] body:not(.comments-page) .stickied .link .tagline,html[lang="dm"] body:not(.comments-page) .stickied .tagline,html[lang="dm"] body:not(.comments-page) .stickied .entry .buttons li a,html[lang="dm"] body:not(.comments-page) .stickied .entry .buttons li + li,html[lang="dm"] body:not(.comments-page) .stickied .md p {color: #7ddc1f!important}
+.res-nightmode .stickied a.title:link,.res-nightmode body:not(.comments-page) .stickied a.title:visited,.res-nightmode body:not(.comments-page) .stickied .link .tagline,.res-nightmode body:not(.comments-page) .stickied .tagline,.res-nightmode body:not(.comments-page) .stickied .entry .buttons li a,.res-nightmode body:not(.comments-page) .stickied .entry .buttons li + li,.res-nightmode body:not(.comments-page) .stickied .md p {color: #7ddc1f!important}
 
-html[lang="dm"] .over18 a.title:link,html[lang="dm"] .over18 a.title:visited,html[lang="dm"] body:not(.comments-page) .over18 .link .tagline,html[lang="dm"] body:not(.comments-page) .over18 .tagline,html[lang="dm"] body:not(.comments-page) .over18 .entry .buttons li a,html[lang="dm"] body:not(.comments-page) .over18 .entry .buttons li + li,html[lang="dm"] body:not(.comments-page) .over18 .md p {color: #fe728b!important}
+.res-nightmode .over18 a.title:link,.res-nightmode .over18 a.title:visited,.res-nightmode body:not(.comments-page) .over18 .link .tagline,.res-nightmode body:not(.comments-page) .over18 .tagline,.res-nightmode body:not(.comments-page) .over18 .entry .buttons li a,.res-nightmode body:not(.comments-page) .over18 .entry .buttons li + li,.res-nightmode body:not(.comments-page) .over18 .md p {color: #fe728b!important}
 
-html[lang="dm"] body {background: #222}
+.res-nightmode body {background: #222}
 
-html[lang="dm"] div.content {background-color: #333;border:none}
+.res-nightmode div.content {background-color: #333;border:none}
 
-html[lang="dm"] .entry .buttons li a {color: #ccc!important}
+.res-nightmode .entry .buttons li a {color: #ccc!important}
 
-html[lang="dm"] .thing .title:visited,html[lang="dm"] .commentarea .menuarea .toggle a,html[lang="dm"] .commentNavSortType,html[lang="dm"] .dropdown.lightdrop .selected {color: #ababab !important;}
+.res-nightmode .thing .title:visited,.res-nightmode .commentarea .menuarea .toggle a,.res-nightmode .commentNavSortType,.res-nightmode .dropdown.lightdrop .selected {color: #ababab !important;}
 
-html[lang="dm"] .thing .title {color: #fff !important}
+.res-nightmode .thing .title {color: #fff !important}
 
-html[lang="dm"] input[name="uh"] ~ a:after {display: none}
+.res-nightmode input[name="uh"] ~ a:after {display: none}
 
-html[lang="dm"] .entry .buttons .may-blank {color: #fff}
+.res-nightmode .entry .buttons .may-blank {color: #fff}
 
-html[lang="dm"] a.comments::after {color: #ccc!important}
+.res-nightmode a.comments::after {color: #ccc!important}
 
-html[lang="dm"] .flair {border: none}
+.res-nightmode .flair {border: none}
 
-html[lang="dm"] .side {border: #4c4c4c;background:#333}
+.res-nightmode .side {border: #4c4c4c;background:#333}
 
-html[lang="dm"] div.leavemoderator,html[lang="dm"] .toggle .option.active,html[lang="dm"] .titlebox form.toggle {color: #ccc}
+.res-nightmode div.leavemoderator,.res-nightmode .toggle .option.active,.res-nightmode .titlebox form.toggle {color: #ccc}
 
-html[lang="dm"] .side .usertext-body {background-image: none;padding:0}
+.res-nightmode .side .usertext-body {background-image: none;padding:0}
 
-html[lang="dm"] .icon-menu a {color: #fff}
+.res-nightmode .icon-menu a {color: #fff}
 
-html[lang="dm"] .sidecontentbox .title h1 {color: #fff;font-weight:700}
+.res-nightmode .sidecontentbox .title h1 {color: #fff;font-weight:700}
 
-html[lang="dm"] .side .titlebox .md h3 a {background: #444}
+.res-nightmode .side .titlebox .md h3 a {background: #444}
 
-html[lang="dm"] .side .titlebox .md h3 a:hover {background: #666}
+.res-nightmode .side .titlebox .md h3 a:hover {background: #666}
 
-html[lang="dm"] .side .titlebox .md h3 a:active {background: #222}
+.res-nightmode .side .titlebox .md h3 a:active {background: #222}
 
-html[lang="dm"] .titlebox span.subscribers,html[lang="dm"] .titlebox .users-online {color: #fff!important}
+.res-nightmode .titlebox span.subscribers,.res-nightmode .titlebox .users-online {color: #fff!important}
 
-html[lang="dm"] #sr-header-area a,
-html[lang="dm"] h2,html[lang="dm"] .sidecontentbox .collapse-button {color: #fff}
+.res-nightmode #sr-header-area a,
+.res-nightmode h2,.res-nightmode .sidecontentbox .collapse-button {color: #fff}
 
-html[lang="dm"] .sidecontentbox .collapse-button {border: 1px solid #fff;}
+.res-nightmode .sidecontentbox .collapse-button {border: 1px solid #fff;}
 
-html[lang="dm"] body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,html[lang="dm"] .commentarea span.score {color: #fff!important}
+.res-nightmode body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,.res-nightmode .commentarea span.score {color: #fff!important}
 
-html[lang="dm"] .side .md h4 a {color: #fff!important}
+.res-nightmode .side .md h4 a {color: #fff!important}
 
-html[lang="dm"] .side .md h4 {background: #323232}
+.res-nightmode .side .md h4 {background: #323232}
 
-html[lang="dm"] body:not(.comments-page) div.content .entry,html[lang="dm"] .md hr {border-bottom: 1px solid #666}
+.res-nightmode body:not(.comments-page) div.content .entry,.res-nightmode .md hr {border-bottom: 1px solid #666}
 
-html[lang="dm"] .content .md a {color: #a4d11b !important}
+.res-nightmode .content .md a {color: #a4d11b !important}
 
-html[lang="dm"] .titlebox a {color: #a4d11b}
+.res-nightmode .titlebox a {color: #a4d11b}
 
-html[lang="dm"] .link.promotedlink.promoted {background-color: #565656}
+.res-nightmode .link.promotedlink.promoted {background-color: #565656}
 
-html[lang="dm"] span.score,html[lang="dm"] .sidecontentbox .more a {color: #ccc!important}
+.res-nightmode span.score,.res-nightmode .sidecontentbox .more a {color: #ccc!important}
 
-html[lang="dm"] #progressIndicator,html[lang="dm"] .commentarea .panestack-title .title,html[lang="dm"] .commentingAs,html[lang="dm"] .md,html[lang="dm"] .linkinfo .date,html[lang="dm"] div.score,html[lang="dm"] span.totalvotes,html[lang="dm"] .linkinfo .shortlink {color: #fff!important}
+.res-nightmode #progressIndicator,.res-nightmode .commentarea .panestack-title .title,.res-nightmode .commentingAs,.res-nightmode .md,.res-nightmode .linkinfo .date,.res-nightmode div.score,.res-nightmode span.totalvotes,.res-nightmode .linkinfo .shortlink {color: #fff!important}
 
-html[lang="dm"] body.comments-page .link {background: #323232}
+.res-nightmode body.comments-page .link {background: #323232}
 
-html[lang="dm"] .commentarea > .usertext {background-color: #292929}
+.res-nightmode .commentarea > .usertext {background-color: #292929}
 
-html[lang="dm"] .commentarea .thing,
-html[lang="dm"] .commentarea .child .thing.comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+.res-nightmode .commentarea .thing,
+.res-nightmode .commentarea .child .thing.comment,
+.res-nightmode .commentarea .child .thing.comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
     border:1px solid #333 !important
 }
 
-html[lang="dm"] .commentarea .child .thing.comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+.res-nightmode .commentarea .child .thing.comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
     background: #222 !important;
 }
 
-html[lang="dm"] .commentarea .thing,
-html[lang="dm"] .commentarea .child .thing.comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+.res-nightmode .commentarea .thing,
+.res-nightmode .commentarea .child .thing.comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
        background: #292929 !important;
 }
 
 
-html[lang="dm"] button {background-color: #999;color:#000}
+.res-nightmode button {background-color: #999;color:#000}
 
-html[lang="dm"] .tagline a,html[lang="dm"] #RESShortcutsSort,html[lang="dm"] #RESShortcutsRight,html[lang="dm"] #RESShortcutsLeft,html[lang="dm"] #RESShortcutsAdd,html[lang="dm"] #RESShortcutsTrash {color: #fff}
+.res-nightmode .tagline a,.res-nightmode #RESShortcutsSort,.res-nightmode #RESShortcutsRight,.res-nightmode #RESShortcutsLeft,.res-nightmode #RESShortcutsAdd,.res-nightmode #RESShortcutsTrash {color: #fff}
 
-html[lang="dm"] .shortlink .input {
+.res-nightmode .shortlink .input {
 	background-color: #222;
 	color: #fff;
 	border: 1px solid #666!important;
  }
 
-html[lang="dm"] .side .titlebox .md h1,html[lang="dm"] .side .md ol,html[lang="dm"] .error,html[lang="dm"] .md del,html[lang="dm"] .dropdown.srdrop span.selected.title,html[lang="dm"] .menuarea,html[lang="dm"] #previoussearch label,html[lang="dm"] .search-page .searchfacets,html[lang="dm"] .searchfacet a,html[lang="dm"] .wiki-page-content .md h1,html[lang="dm"] .titlebox h1 a,html[lang="dm"] .wiki-page .wikititle,html[lang="dm"] .wiki-page .pageactions .wikiaction-current,html[lang="dm"] .generic-table,html[lang="dm"] .md pre code,html[lang="dm"] .formtabs-content .infobar,html[lang="dm"] .roundfield,html[lang="dm"] .wiki-page .wiki-page-content .wiki.md,html[lang="dm"] .wiki-page .wiki-page-content .wiki.md h2, html[lang="dm"] .side .md p,html[lang="dm"] .link .tagline,html[lang="dm"] .entry .buttons .may-blank,html[lang="dm"] .comment .flat-list li a:hover,html[lang="dm"] .link .entry .buttons li a:hover,html[lang="dm"] .link .domain a:hover, html[lang="dm"] #preview-table > table > tbody > tr > th,html[lang="dm"] form#image-upload.image-upload,html[lang="dm"] .pretty-form,  html[lang="dm"] .commentNavSortType:hover,html[lang="dm"] .commentarea .menuarea .toggle a:hover,html[lang="dm"] .comment .flat-list li a[onclick*="reply"],html[lang="dm"] .loadFlat:hover,html[lang="dm"] .submit-page .title,html[lang="dm"] .error,html[lang="dm"] #progressIndicator a#NERStaticLink, html[lang="dm"] .deepthread a, html[lang="dm"] .deepthread::after {color: #fff!important}
+.res-nightmode .side .titlebox .md h1,.res-nightmode .side .md ol,.res-nightmode .error,.res-nightmode .md del,.res-nightmode .dropdown.srdrop span.selected.title,.res-nightmode .menuarea,.res-nightmode #previoussearch label,.res-nightmode .search-page .searchfacets,.res-nightmode .searchfacet a,.res-nightmode .wiki-page-content .md h1,.res-nightmode .titlebox h1 a,.res-nightmode .wiki-page .wikititle,.res-nightmode .wiki-page .pageactions .wikiaction-current,.res-nightmode .generic-table,.res-nightmode .md pre code,.res-nightmode .formtabs-content .infobar,.res-nightmode .roundfield,.res-nightmode .wiki-page .wiki-page-content .wiki.md,.res-nightmode .wiki-page .wiki-page-content .wiki.md h2, .res-nightmode .side .md p,.res-nightmode .link .tagline,.res-nightmode .entry .buttons .may-blank,.res-nightmode .comment .flat-list li a:hover,.res-nightmode .link .entry .buttons li a:hover,.res-nightmode .link .domain a:hover, .res-nightmode #preview-table > table > tbody > tr > th,.res-nightmode form#image-upload.image-upload,.res-nightmode .pretty-form,  .res-nightmode .commentNavSortType:hover,.res-nightmode .commentarea .menuarea .toggle a:hover,.res-nightmode .comment .flat-list li a[onclick*="reply"],.res-nightmode .loadFlat:hover,.res-nightmode .submit-page .title,.res-nightmode .error,.res-nightmode #progressIndicator a#NERStaticLink, .res-nightmode .deepthread a, .res-nightmode .deepthread::after {color: #fff!important}
 
-html[lang="dm"] .search-page .searchfacets {background: #555}
+.res-nightmode .search-page .searchfacets {background: #555}
 
-html[lang="dm"] .roundfield,html[lang="dm"] .formtabs-content .infobar {background-color: #333}
+.res-nightmode .roundfield,.res-nightmode .formtabs-content .infobar {background-color: #333}
 
-html[lang="dm"] .md code {background-color: #222;border:1px solid #666!important}
+.res-nightmode .md code {background-color: #222;border:1px solid #666!important}
 
-html[lang="dm"] .md pre {padding: 0;background-color:transparent!important; border: none;}
+.res-nightmode .md pre {padding: 0;background-color:transparent!important; border: none;}
 
-html[lang="dm"] .wiki-page div.content {background-color: transparent;border:none}
+.res-nightmode .wiki-page div.content {background-color: transparent;border:none}
 
-html[lang="dm"] .livePreview .md p {color: #000}
+.res-nightmode .livePreview .md p {color: #000}
 
-html[lang="dm"] .wiki-page .infobar {background: none;border:none}
+.res-nightmode .wiki-page .infobar {background: none;border:none}
 
-html[lang="dm"] .wiki-page .wiki-page-content,html[lang="dm"] .wiki-page .pageactions,html[lang="dm"] .wiki-page .wikititle,html[lang="dm"] .content.submit .info-notice {background-color: #444!important}
+.res-nightmode .wiki-page .wiki-page-content,.res-nightmode .wiki-page .pageactions,.res-nightmode .wiki-page .wikititle,.res-nightmode .content.submit .info-notice {background-color: #444!important}
 
-html[lang="dm"] body:not(.search-page) #search input[type="text"] {
+.res-nightmode body:not(.search-page) #search input[type="text"] {
 	background: #222!important;
 	border: 1px solid #444;
 	color: #fff
  }
 
-html[lang="dm"] .submit-page .content a {color: #999 !important;}
+.res-nightmode .submit-page .content a {color: #999 !important;}
 
-html[lang="dm"] .md table,html[lang="dm"] .md ul {color: #fff!important}
+.res-nightmode .md table,.res-nightmode .md ul {color: #fff!important}
 
-html[lang="dm"] .side .titlebox {color: #fff}
+.res-nightmode .side .titlebox {color: #fff}
 
-html[lang="dm"] ::-moz-selection {background: #666;color:#fff}
+.res-nightmode ::-moz-selection {background: #666;color:#fff}
 
-html[lang="dm"] .linkinfo {background-color: #303030}
+.res-nightmode .linkinfo {background-color: #303030}
 
-html[lang="dm"] .debuginfo, html[lang="dm"] .footer-parent {background: #111;}
+.res-nightmode .debuginfo, .res-nightmode .footer-parent {background: #111;}
 
-html[lang="dm"] .gold-accent.comment-visits-box {color: #fff}
+.res-nightmode .gold-accent.comment-visits-box {color: #fff}
 
-html[lang="dm"] ul#image-preview-list li {
+.res-nightmode ul#image-preview-list li {
 	background: #333;
 	border: none;
 	color: #fff
  }
 
-html[lang="dm"] .flairselector h2,html[lang="dm"] .flairselector .tagline a {color: #000!important}
+.res-nightmode .flairselector h2,.res-nightmode .flairselector .tagline a {color: #000!important}
 
-html[lang="dm"] .wiki-page .wiki-page-content .md.wiki h4 {color: #fff!important}
+.res-nightmode .wiki-page .wiki-page-content .md.wiki h4 {color: #fff!important}
 
-html[lang="dm"] .comments-page .content .infobar {
+.res-nightmode .comments-page .content .infobar {
 	background: #444;
 	color: #fff;
  }
 
-html[lang="dm"] 	.commentarea textarea:not(:focus):not(:hover) {
+.res-nightmode 	.commentarea textarea:not(:focus):not(:hover) {
     		color: transparent;
     		background-color: #444 !important;
 		text-shadow: 0px 0px 12px #000;
 	}
 
-html[lang="dm"] 	.commentarea textarea:hover,
-html[lang="dm"] .roundfield textarea:hover,
-html[lang="dm"] .roundfield input[type="url"]:hover,
-html[lang="dm"] .roundfield input[type="text"]:hover {border: 1px solid #9f9f9f;}
+.res-nightmode 	.commentarea textarea:hover,
+.res-nightmode .roundfield textarea:hover,
+.res-nightmode .roundfield input[type="url"]:hover,
+.res-nightmode .roundfield input[type="text"]:hover {border: 1px solid #9f9f9f;}
 
-html[lang="dm"] textarea,
-html[lang="dm"] .roundfield input[type="text"],
-html[lang="dm"] .roundfield input[type="url"] {
+.res-nightmode textarea,
+.res-nightmode .roundfield input[type="text"],
+.res-nightmode .roundfield input[type="url"] {
 	background-color: #222!important;
 	color:#fff!important;
 	transition: 300ms;
@@ -3130,38 +3137,38 @@ html[lang="dm"] .roundfield input[type="url"] {
 	border: 1px solid #666;
 }
 
-html[lang="dm"] .usertext-edit textarea:focus,
-html[lang="dm"] .roundfield textarea:focus,
-html[lang="dm"] .roundfield input[type="url"]:focus,
-html[lang="dm"] .roundfield input[type="text"]:focus {
+.res-nightmode .usertext-edit textarea:focus,
+.res-nightmode .roundfield textarea:focus,
+.res-nightmode .roundfield input[type="url"]:focus,
+.res-nightmode .roundfield input[type="text"]:focus {
 	border: 1px solid #666;
 	transition: 0.1s ease;
 	border-bottom: 3px solid #999 !important;
 }
 
-html[lang="dm"] .toc ul {background: transparent;}
+.res-nightmode .toc ul {background: transparent;}
 
-html[lang="dm"] .deepthread a, .deepthread::after {color: white;}
+.res-nightmode .deepthread a, .deepthread::after {color: white;}
 
-html[lang="dm"] .commentarea .comment a.expand:hover {background: #999; color: #333;}
+.res-nightmode .commentarea .comment a.expand:hover {background: #999; color: #333;}
 
-html[lang="dm"] .markdownEditor .edit-btn:not(.btn-macro) {background-color: #ccc !important; border: none !important; border-radius: 4px !important;}
+.res-nightmode .markdownEditor .edit-btn:not(.btn-macro) {background-color: #ccc !important; border: none !important; border-radius: 4px !important;}
 
-html[lang="dm"] .expando-button,html[lang="dm"]  .expando-button.expanded,html[lang="dm"]  .expando-button.expanded:hover,html[lang="dm"] .expando-button:hover {border-radius: 20px !important; background-color: #999 !important;}
+.res-nightmode .expando-button,.res-nightmode  .expando-button.expanded,.res-nightmode  .expando-button.expanded:hover,.res-nightmode .expando-button:hover {border-radius: 20px !important; background-color: #999 !important;}
 
-html[lang="dm"] #REScommentSubToggle {
+.res-nightmode #REScommentSubToggle {
     background: #ccc !important;
     color: #000 !important;
 }
 
-html[lang="dm"] .tabmenu {background: #333;}
+.res-nightmode .tabmenu {background: #333;}
 
-html[lang="dm"] .side .md h2 + ul {background: #222;}
+.res-nightmode .side .md h2 + ul {background: #222;}
 
-html[lang="dm"] .side .sidecontentbox a {color: #ccc}
+.res-nightmode .side .sidecontentbox a {color: #ccc}
 
-html[lang="dm"] .RES-keyNav-activeElement,
-html[lang="dm"] .RES-keyNav-activeElement .md-container {
+.res-nightmode .RES-keyNav-activeElement,
+.res-nightmode .RES-keyNav-activeElement .md-container {
     background-color: #444 !important;
     border-color: #aaa;
 }
@@ -3200,15 +3207,6 @@ read message by Hakan Yalcin from the Noun Project
 
 /*ADD SNIPPETS BELOW THIS LINE
 ============================================================================*/
-
-/*USER FLAIR LABELS*/
-.flair-blackflair[title]:before {content: 'Oculus ID:';}
-.flair-redflair[title]:before {content: 'Redflair';}
-.flair-purpleflair[title]:before {content: 'Purpleflair';}
-.flair-greenflair[title]:before {content: 'Developer';}
-.flair-orangeflair[title]:before {content: 'Orangeflair';}
-.flair-blueflair[title]:before {content: 'Oculus Employee';}
-/*END USER FLAIR LABELS*/
 
 /*DOWNVOTE TEXT*/
 .arrow.down:hover:before {
