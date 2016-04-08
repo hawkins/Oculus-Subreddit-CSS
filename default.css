@@ -2618,15 +2618,13 @@ form#image-upload.image-upload {
 	color: white;
  }
 
-.bottommenu {
-	font-size: 10px;
-	color: #FFF !important;
-	border: medium none !important;
-	text-transform: uppercase;
-	font-weight: lighter;
-	background-color: #16181A;
-    	padding-top: 10px;
- }
+.bottommenu { font-size: 10px; 
+border: medium none!important; 
+text-transform: uppercase;
+font-weight: normal;
+background-color: #16181A ;
+padding-top: 10px;
+color: #6D6D6D !important; }
 
 	.bottommenu a {
 		text-decoration: none;
