@@ -431,7 +431,10 @@ ul#image-preview-list {
 #search input[type="text"],
 .md textarea,
 textarea,
-body {font-family: -apple-system, San Francisco Display, Helvetica Neue, Helvetica, Arial, sans-serif;}
+body {font-family: -apple-system, San Francisco Display, Helvetica Neue, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
 
 
 /*RES TEMP BUGFIX*/
